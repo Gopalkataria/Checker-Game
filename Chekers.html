@@ -76,14 +76,13 @@ for (i = 6; i < 8; i++) {
             }
 
             .circle {
-                position : absolute ;
-                height : 50px ;
-                width : 50px ;
-                border : 2px outset #f1f1f1 ;
-                border-radius : 45px ;
-                border-style : outset ; 
-                color : #0000ff ; 
-          
+                position : absolute;
+                height : 50px;
+                width : 50px;
+                border: 2px outset #f1f1f1;
+                border-radius : 45px;
+                border-style : outset;
+                color: #00ff13;
             }
 
             .mover {
@@ -118,16 +117,16 @@ for (i = 6; i < 8; i++) {
             }
 
             .box {
-                text-align : center ;
-                color : #00ff00 ; 
-                height : 54px ;
-                width : 54px ;
-                align : center ;
-                postion : relative ;
-                background : #1f1f1f ;
-                padding : 3px 3px ;
+                text-align : center;
+                color : #72654e;
+                height : 54px;
+                width : 54px;
+                align : center;
+                postion : relative;
+                background: #72654e;
+                padding : 3px 3px;
                 border : 5px solid #000000;
-                border-radius : 8px ;
+                border-radius : 8px;
             }
             .mover {
                 background : #f0f0f0 ; 
@@ -144,7 +143,7 @@ for (i = 6; i < 8; i++) {
     <body>
 
         <font color=#000000 size=3px>
-            <div id="score" onmouseover="changeColor('score')" onmouseout="changeColorToOriginal('score')">score </div>
+            <div id="score" onmouseover="changeColorOfCircle('score')" onmouseout="changeColorOfCircleToOriginal('score')">score </div>
             <font>
                 
                   <script  language="javascript" type="text/javascript" > 
@@ -155,7 +154,7 @@ for (i = 6; i < 8; i++) {
 }
 function changeColorToOriginal(box) {
     var box = document.getElementById(box);
-    box.style.backgroundColor = "#1f1f1f";
+    box.style.backgroundColor = "#72654e";
 }
 
 function changePlace(circle, destiny) {
